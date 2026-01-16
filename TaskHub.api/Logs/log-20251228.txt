@@ -1,0 +1,577 @@
+2025-12-28 00:18:42.326 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 00:18:42.433 +05:30 [INF] Creating key {a1648ff8-5871-4bf0-b978-7f5b18a9bce2} with creation date 2025-12-27 18:48:42Z, activation date 2025-12-27 18:48:42Z, and expiration date 2026-03-27 18:48:42Z.
+2025-12-28 00:18:42.443 +05:30 [INF] Writing data to file 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys\key-a1648ff8-5871-4bf0-b978-7f5b18a9bce2.xml'.
+2025-12-28 00:18:42.558 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-28 00:18:42.560 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 00:18:42.561 +05:30 [INF] Hosting environment: Development
+2025-12-28 00:18:42.561 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-28 00:18:42.730 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-28 00:18:42.791 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-28 00:18:43.369 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 641.176ms
+2025-12-28 00:18:43.384 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-28 00:18:47.217 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 00:18:47.223 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 7.7786ms
+2025-12-28 00:18:47.380 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 00:18:47.500 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 120.0724ms
+2025-12-28 00:19:08.623 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-28 00:19:08.710 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:19:08.734 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-28 00:19:10.773 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-28 00:19:10.857 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-28 00:19:10.869 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 2131.1559ms
+2025-12-28 00:19:10.870 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:19:10.876 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 2253.3772ms
+2025-12-28 00:19:48.089 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 00:19:48.135 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuerAsync(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-12-28 00:19:48.142 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+2025-12-28 00:19:48.150 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 00:19:48.160 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 00:19:48.160 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 401 0 null 70.7204ms
+2025-12-28 00:20:38.850 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 00:20:38.852 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuerAsync(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-12-28 00:20:38.854 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+2025-12-28 00:20:38.854 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 00:20:38.855 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 00:20:38.855 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 401 0 null 5.0281ms
+2025-12-28 00:20:53.234 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-28 00:20:53.236 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuerAsync(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-12-28 00:20:53.237 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+2025-12-28 00:20:53.238 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:20:53.239 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-28 00:20:53.281 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-28 00:20:53.283 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-28 00:20:53.284 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 44.5472ms
+2025-12-28 00:20:53.284 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:20:53.284 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 50.3558ms
+2025-12-28 00:21:50.554 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 00:21:50.556 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuerAsync(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-12-28 00:21:50.557 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+2025-12-28 00:21:50.558 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 00:21:50.558 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 00:21:50.559 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 401 0 null 4.3735ms
+2025-12-28 00:23:16.231 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 00:23:16.241 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 9.569ms
+2025-12-28 00:23:16.483 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 00:23:16.490 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.7484ms
+2025-12-28 00:23:42.086 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-28 00:23:42.120 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:23:42.120 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-28 00:23:42.183 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-28 00:23:42.185 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-28 00:23:42.186 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 65.1614ms
+2025-12-28 00:23:42.186 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:23:42.186 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 100.6186ms
+2025-12-28 00:24:37.296 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 00:24:37.298 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuerAsync(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-12-28 00:24:37.299 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+2025-12-28 00:24:37.299 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 00:24:37.299 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 00:24:37.299 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 401 0 null 3.0493ms
+2025-12-28 00:26:05.765 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 00:26:05.917 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-28 00:26:05.918 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 00:26:05.918 +05:30 [INF] Hosting environment: Development
+2025-12-28 00:26:05.918 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-28 00:26:06.101 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-28 00:26:06.180 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-28 00:26:06.278 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 179.8744ms
+2025-12-28 00:26:06.296 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-28 00:26:10.746 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 00:26:10.752 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 6.5844ms
+2025-12-28 00:26:10.985 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 00:26:11.095 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.967ms
+2025-12-28 00:26:25.989 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-28 00:26:26.070 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:26:26.104 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-28 00:26:27.216 +05:30 [INF] Executed DbCommand (39ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-28 00:26:27.324 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-28 00:26:27.342 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 1234.9908ms
+2025-12-28 00:26:27.342 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:26:27.352 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 1362.0784ms
+2025-12-28 00:26:39.132 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/TaskControllers - null null
+2025-12-28 00:26:39.150 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 00:26:39.155 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 00:26:39.156 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/TaskControllers - 401 0 null 23.64ms
+2025-12-28 00:26:57.554 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/TaskControllers - null null
+2025-12-28 00:26:57.589 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuerAsync(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-12-28 00:26:57.596 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+2025-12-28 00:26:57.597 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 00:26:57.598 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 00:26:57.598 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/TaskControllers - 401 0 null 44.4247ms
+2025-12-28 00:27:01.452 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/TaskControllers - null null
+2025-12-28 00:27:01.454 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuerAsync(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-12-28 00:27:01.455 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+2025-12-28 00:27:01.458 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 00:27:01.459 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 00:27:01.459 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/TaskControllers - 401 0 null 7.1948ms
+2025-12-28 00:27:02.186 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/TaskControllers - null null
+2025-12-28 00:27:02.188 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuerAsync(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-12-28 00:27:02.189 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+2025-12-28 00:27:02.189 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 00:27:02.189 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 00:27:02.189 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/TaskControllers - 401 0 null 3.4602ms
+2025-12-28 00:27:02.374 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/TaskControllers - null null
+2025-12-28 00:27:02.375 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuerAsync(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-12-28 00:27:02.376 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+2025-12-28 00:27:02.377 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 00:27:02.377 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 00:27:02.377 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/TaskControllers - 401 0 null 3.0908ms
+2025-12-28 00:27:02.567 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/TaskControllers - null null
+2025-12-28 00:27:02.568 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuerAsync(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-12-28 00:27:02.569 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+2025-12-28 00:27:02.569 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 00:27:02.569 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 00:27:02.569 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/TaskControllers - 401 0 null 2.5222ms
+2025-12-28 00:30:32.721 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 00:30:32.891 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-28 00:30:32.892 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 00:30:32.892 +05:30 [INF] Hosting environment: Development
+2025-12-28 00:30:32.893 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-28 00:30:33.044 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-28 00:30:33.107 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-28 00:30:33.188 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 146.1ms
+2025-12-28 00:30:33.203 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-28 00:30:36.429 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 00:30:36.437 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 8.5675ms
+2025-12-28 00:30:36.703 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 00:30:36.811 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.1749ms
+2025-12-28 00:30:49.645 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-28 00:30:49.670 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:30:49.705 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-28 00:30:50.822 +05:30 [INF] Executed DbCommand (47ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-28 00:30:50.927 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-28 00:30:50.942 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 1234.4814ms
+2025-12-28 00:30:50.943 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:30:50.951 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 1306.0261ms
+2025-12-28 00:32:14.802 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 00:32:14.803 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 1.0842ms
+2025-12-28 00:32:15.039 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 00:32:15.046 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.505ms
+2025-12-28 00:32:34.730 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 00:32:34.731 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 0.6455ms
+2025-12-28 00:32:34.855 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 00:32:34.859 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.2424ms
+2025-12-28 00:32:58.457 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 00:32:58.622 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-28 00:32:58.624 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 00:32:58.624 +05:30 [INF] Hosting environment: Development
+2025-12-28 00:32:58.624 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-28 00:32:58.789 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-28 00:32:58.842 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-28 00:32:58.922 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 135.4295ms
+2025-12-28 00:32:58.937 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-28 00:33:01.022 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-28 00:33:01.032 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 10.2814ms
+2025-12-28 00:33:01.032 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-28 00:33:04.274 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 00:33:04.280 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 5.8254ms
+2025-12-28 00:33:04.529 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 00:33:04.635 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 106.0275ms
+2025-12-28 00:33:26.572 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-28 00:33:26.587 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:33:26.610 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-28 00:33:27.768 +05:30 [INF] Executed DbCommand (40ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-28 00:33:27.860 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-28 00:33:27.872 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 1259.7222ms
+2025-12-28 00:33:27.873 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:33:27.881 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 1308.5639ms
+2025-12-28 00:33:48.897 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 00:33:48.937 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidIssuerException: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateIssuerAsync(String issuer, SecurityToken securityToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-12-28 00:33:48.944 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10211: Issuer validation failed. Unable to validate issuer. The 'issuer' parameter is null or whitespace.
+2025-12-28 00:33:48.949 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 00:33:48.955 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 00:33:48.956 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 401 0 null 92.4229ms
+2025-12-28 00:40:44.473 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 00:40:44.612 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-28 00:40:44.613 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 00:40:44.614 +05:30 [INF] Hosting environment: Development
+2025-12-28 00:40:44.614 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-28 00:40:44.776 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-28 00:40:44.837 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-28 00:40:44.918 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 145.3433ms
+2025-12-28 00:40:44.935 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-28 00:40:54.343 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 00:40:54.348 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 7.0261ms
+2025-12-28 00:40:54.624 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 00:40:54.738 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 114.5082ms
+2025-12-28 00:42:57.304 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 00:42:57.495 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-28 00:42:57.497 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 00:42:57.497 +05:30 [INF] Hosting environment: Development
+2025-12-28 00:42:57.497 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-28 00:42:57.640 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-28 00:42:57.706 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-28 00:42:58.888 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 1249.3815ms
+2025-12-28 00:42:58.905 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-28 00:43:02.664 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 00:43:02.670 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 6.5478ms
+2025-12-28 00:43:02.911 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 00:43:03.005 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 94.0152ms
+2025-12-28 00:43:19.893 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-28 00:43:20.002 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:43:20.030 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-28 00:43:21.904 +05:30 [INF] Executed DbCommand (84ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-28 00:43:22.026 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-28 00:43:22.037 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 2004.4366ms
+2025-12-28 00:43:22.038 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:43:22.045 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 2151.6655ms
+2025-12-28 00:43:54.845 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 00:43:54.863 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-12-28 00:43:54.868 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2025-12-28 00:43:54.875 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 00:43:54.879 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 00:43:54.879 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 401 0 null 33.8529ms
+2025-12-28 00:58:34.002 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 00:58:34.151 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-28 00:58:34.152 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 00:58:34.152 +05:30 [INF] Hosting environment: Development
+2025-12-28 00:58:34.152 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-28 00:58:34.301 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-28 00:58:34.356 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-28 00:58:34.439 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 140.9643ms
+2025-12-28 00:58:34.458 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-28 00:58:37.888 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 00:58:37.894 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 6.2314ms
+2025-12-28 00:58:38.002 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 00:58:38.083 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 80.7195ms
+2025-12-28 00:58:57.345 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-28 00:58:57.431 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:58:57.470 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-28 00:58:59.459 +05:30 [INF] Executed DbCommand (47ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-28 00:58:59.568 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-28 00:58:59.581 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 2106.4067ms
+2025-12-28 00:58:59.581 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 00:58:59.587 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 2241.7057ms
+2025-12-28 00:59:29.099 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 00:59:29.113 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-12-28 00:59:29.118 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2025-12-28 00:59:29.124 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 00:59:29.128 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 00:59:29.129 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 401 0 null 29.9419ms
+2025-12-28 01:05:01.003 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 01:05:01.005 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 1.773ms
+2025-12-28 01:05:01.240 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 01:05:01.246 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.4638ms
+2025-12-28 01:05:06.102 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 01:05:06.104 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 01:05:06.104 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 01:05:06.105 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 401 0 null 2.2724ms
+2025-12-28 01:09:52.739 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-28 01:09:52.741 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 01:09:52.741 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-28 01:09:52.938 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-28 01:09:52.940 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-28 01:09:52.940 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 198.5967ms
+2025-12-28 01:09:52.940 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 01:09:52.941 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 225.1828ms
+2025-12-28 01:10:52.421 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 01:10:52.423 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14122: JWT is not a well formed JWE, there are more than four dots (.) a JWE can have at most 4 dots.
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2025-12-28 01:10:52.423 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14122: JWT is not a well formed JWE, there are more than four dots (.) a JWE can have at most 4 dots.
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2025-12-28 01:10:52.425 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 01:10:52.426 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 01:10:52.426 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 401 0 null 4.8517ms
+2025-12-28 01:11:55.231 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 01:11:55.372 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-28 01:11:55.374 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 01:11:55.374 +05:30 [INF] Hosting environment: Development
+2025-12-28 01:11:55.374 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-28 01:11:55.551 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-28 01:11:55.610 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-28 01:11:55.687 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 137.4744ms
+2025-12-28 01:11:55.706 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-28 01:12:01.144 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 01:12:01.149 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 5.8583ms
+2025-12-28 01:12:01.316 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 01:12:01.401 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 84.4553ms
+2025-12-28 01:12:08.534 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 01:12:08.551 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-28 01:12:08.575 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-28 01:12:09.644 +05:30 [INF] Executed DbCommand (47ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+2025-12-28 01:12:09.673 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskHub.api.Models.TaskItem, TaskHub.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-28 01:12:09.705 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api) in 1126.0989ms
+2025-12-28 01:12:09.705 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-28 01:12:09.715 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 200 null application/json; charset=utf-8 1181.0124ms
+2025-12-28 01:13:48.721 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 01:13:48.724 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-28 01:13:48.725 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-28 01:13:52.541 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+2025-12-28 01:14:13.014 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskHub.api.Models.TaskItem, TaskHub.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-28 01:14:13.018 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api) in 24290.4657ms
+2025-12-28 01:14:13.042 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-28 01:14:13.043 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 200 null application/json; charset=utf-8 24321.5762ms
+2025-12-28 01:16:12.367 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 01:16:12.368 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-28 01:16:12.368 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-28 01:16:22.530 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+2025-12-28 01:16:22.531 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskHub.api.Models.TaskItem, TaskHub.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-28 01:16:22.531 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api) in 10162.5336ms
+2025-12-28 01:16:22.531 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-28 01:16:22.531 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 200 null application/json; charset=utf-8 10198.6869ms
+2025-12-28 01:26:45.101 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 01:26:45.248 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-28 01:26:45.250 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 01:26:45.250 +05:30 [INF] Hosting environment: Development
+2025-12-28 01:26:45.250 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-28 01:26:45.456 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-28 01:26:45.518 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-28 01:26:45.592 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 138.1659ms
+2025-12-28 01:26:45.604 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-28 01:26:50.499 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 01:26:50.504 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 5.4229ms
+2025-12-28 01:26:50.600 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 01:26:50.681 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 81.4669ms
+2025-12-28 01:27:16.108 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 01:27:16.277 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-28 01:27:16.278 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 01:27:16.279 +05:30 [INF] Hosting environment: Development
+2025-12-28 01:27:16.279 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-28 01:27:16.351 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 01:27:16.387 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-28 01:27:16.417 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-28 01:27:16.501 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 113.4176ms
+2025-12-28 01:27:16.517 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-28 01:27:16.577 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 228.8561ms
+2025-12-28 01:27:22.192 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 01:27:22.211 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-28 01:27:22.215 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-28 01:27:22.215 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 401 0 null 23.8455ms
+2025-12-28 01:27:39.020 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-28 01:27:39.024 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 01:27:39.053 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-28 01:27:40.106 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-28 01:27:40.213 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-28 01:27:40.225 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 1168.6244ms
+2025-12-28 01:27:40.225 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 01:27:40.232 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 1211.4972ms
+2025-12-28 01:28:24.700 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 01:28:24.767 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-28 01:28:24.771 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-28 01:28:24.882 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+2025-12-28 01:28:24.892 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskHub.api.Models.TaskItem, TaskHub.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-28 01:28:24.901 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api) in 130.5353ms
+2025-12-28 01:28:24.902 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-28 01:28:24.904 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 200 null application/json; charset=utf-8 235.2278ms
+2025-12-28 01:31:08.939 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 01:31:09.080 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-28 01:31:09.083 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 01:31:09.083 +05:30 [INF] Hosting environment: Development
+2025-12-28 01:31:09.083 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-28 01:31:09.280 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-28 01:31:09.335 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-28 01:31:09.414 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 137.1136ms
+2025-12-28 01:31:09.430 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-28 01:31:13.233 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 01:31:13.239 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 6.7886ms
+2025-12-28 01:31:13.472 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 01:31:13.580 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.585ms
+2025-12-28 01:31:29.244 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-28 01:31:29.379 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 01:31:29.408 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-28 01:31:30.463 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-28 01:31:30.563 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-28 01:31:30.576 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 1163.9718ms
+2025-12-28 01:31:30.576 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 01:31:30.583 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 1338.6332ms
+2025-12-28 01:31:57.752 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 01:31:57.832 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-28 01:31:57.835 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-28 01:31:57.973 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+2025-12-28 01:31:57.986 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskHub.api.Models.TaskItem, TaskHub.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-28 01:31:57.996 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api) in 160.7219ms
+2025-12-28 01:31:57.997 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-28 01:31:57.999 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 200 null application/json; charset=utf-8 285.0087ms
+2025-12-28 01:32:44.311 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 01:32:44.469 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-28 01:32:44.471 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 01:32:44.471 +05:30 [INF] Hosting environment: Development
+2025-12-28 01:32:44.471 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-28 01:32:44.652 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-28 01:32:44.715 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-28 01:32:44.817 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 166.502ms
+2025-12-28 01:32:44.833 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-28 01:32:48.006 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 01:32:48.010 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 5.8356ms
+2025-12-28 01:32:48.129 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 01:32:48.245 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 116.3379ms
+2025-12-28 01:33:05.782 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-28 01:33:05.870 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 01:33:05.898 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-28 01:33:07.008 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-28 01:33:07.110 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-28 01:33:07.126 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 1225.4758ms
+2025-12-28 01:33:07.126 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 01:33:07.133 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 1351.4147ms
+2025-12-28 01:33:30.752 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 01:33:30.856 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-28 01:33:30.862 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-28 01:33:31.016 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+2025-12-28 01:33:31.028 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskHub.api.Models.TaskItem, TaskHub.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-28 01:33:31.037 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api) in 174.2511ms
+2025-12-28 01:33:31.037 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-28 01:33:31.039 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 200 null application/json; charset=utf-8 287.4384ms
+2025-12-28 01:34:40.169 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-28 01:34:40.340 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-28 01:34:40.342 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-28 01:34:40.342 +05:30 [INF] Hosting environment: Development
+2025-12-28 01:34:40.342 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-28 01:34:40.504 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-28 01:34:40.563 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-28 01:34:40.638 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 137.3113ms
+2025-12-28 01:34:40.655 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-28 01:34:46.604 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-28 01:34:46.609 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 5.5327ms
+2025-12-28 01:34:46.844 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-28 01:34:46.964 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 119.9565ms
+2025-12-28 01:34:58.614 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-28 01:34:58.666 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 01:34:58.703 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-28 01:34:59.760 +05:30 [INF] Executed DbCommand (31ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-28 01:34:59.859 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-28 01:34:59.876 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 1168.8052ms
+2025-12-28 01:34:59.876 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-28 01:34:59.886 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 1271.3788ms
+2025-12-28 01:35:20.650 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-28 01:35:20.695 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-28 01:35:20.699 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-28 01:35:20.837 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+2025-12-28 01:35:20.850 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskHub.api.Models.TaskItem, TaskHub.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-28 01:35:20.859 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api) in 160.3948ms
+2025-12-28 01:35:20.860 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-28 01:35:20.863 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 200 null application/json; charset=utf-8 214.2163ms

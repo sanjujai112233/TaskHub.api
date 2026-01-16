@@ -1,0 +1,84 @@
+2025-10-23 12:00:56.809 +05:30 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5216: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-10-23 12:02:01.691 +05:30 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5216: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-10-23 12:04:40.493 +05:30 [INF] Now listening on: http://localhost:5216
+2025-10-23 12:04:40.583 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-23 12:04:40.584 +05:30 [INF] Hosting environment: Development
+2025-10-23 12:04:40.584 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-10-23 12:06:35.937 +05:30 [INF] Now listening on: http://localhost:5216
+2025-10-23 12:06:36.018 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-23 12:06:36.019 +05:30 [INF] Hosting environment: Development
+2025-10-23 12:06:36.019 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-10-23 12:07:29.872 +05:30 [INF] Now listening on: http://localhost:5216
+2025-10-23 12:07:29.967 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-23 12:07:29.968 +05:30 [INF] Hosting environment: Development
+2025-10-23 12:07:29.968 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-10-23 12:07:30.343 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-10-23 12:07:30.442 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-10-23 12:07:30.478 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 0 null 136.8502ms
+2025-10-23 12:07:30.520 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-10-23 12:07:40.342 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger - null null
+2025-10-23 12:07:40.352 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger - 301 0 null 11.5404ms
+2025-10-23 12:07:40.382 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/index.html - null null
+2025-10-23 12:07:40.577 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/index.html - 200 null text/html;charset=utf-8 194.2136ms
+2025-10-23 12:07:40.649 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui.css - null null
+2025-10-23 12:07:40.651 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/index.css - null null
+2025-10-23 12:07:40.656 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-23 12:07:40.657 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui-bundle.js - null null
+2025-10-23 12:07:40.745 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/index.js - null null
+2025-10-23 12:07:40.748 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/index.js - 200 null application/javascript;charset=utf-8 2.8212ms
+2025-10-23 12:07:40.771 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/index.css - 200 152 text/css 119.9428ms
+2025-10-23 12:07:40.772 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui.css - 200 23647 text/css 122.8397ms
+2025-10-23 12:07:40.811 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui-bundle.js - 200 424767 text/javascript 154.4377ms
+2025-10-23 12:07:40.811 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui-standalone-preset.js - 200 77352 text/javascript 155.0197ms
+2025-10-23 12:07:41.263 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-10-23 12:07:41.459 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/favicon-32x32.png - null null
+2025-10-23 12:07:41.466 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/favicon-32x32.png - 200 628 image/png 6.7625ms
+2025-10-23 12:07:41.574 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 311.1946ms

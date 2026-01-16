@@ -1,0 +1,492 @@
+2025-12-27 20:47:01.016 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-27 20:47:01.057 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-27 20:47:01.057 +05:30 [INF] Hosting environment: Development
+2025-12-27 20:47:01.057 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-27 20:47:01.315 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-27 20:47:01.376 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-27 20:47:01.400 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 86.2602ms
+2025-12-27 20:47:01.418 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-27 20:47:21.987 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger - null null
+2025-12-27 20:47:22.013 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger - 301 null null 26.9901ms
+2025-12-27 20:47:22.025 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/index.html - null null
+2025-12-27 20:47:22.171 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/index.html - 200 null text/html;charset=utf-8 145.4747ms
+2025-12-27 20:47:22.225 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui.css - null null
+2025-12-27 20:47:22.242 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/index.css - null null
+2025-12-27 20:47:22.243 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui-bundle.js - null null
+2025-12-27 20:47:22.265 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui-standalone-preset.js - null null
+2025-12-27 20:47:22.276 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/index.js - null null
+2025-12-27 20:47:22.316 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 20:47:22.325 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/index.js - 200 null application/javascript;charset=utf-8 49.4047ms
+2025-12-27 20:47:22.373 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 56.9529ms
+2025-12-27 20:47:22.382 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui.css - 200 23647 text/css 156.8003ms
+2025-12-27 20:47:22.382 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/index.css - 200 152 text/css 139.8181ms
+2025-12-27 20:47:22.426 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui-standalone-preset.js - 200 77352 text/javascript 160.581ms
+2025-12-27 20:47:22.426 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui-bundle.js - 200 424767 text/javascript 182.5492ms
+2025-12-27 20:47:22.640 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/index.js - null null
+2025-12-27 20:47:22.642 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/index.js - 200 null application/javascript;charset=utf-8 2.7596ms
+2025-12-27 20:47:22.660 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 20:47:22.661 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 0.6388ms
+2025-12-27 20:47:22.666 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui-bundle.js - null null
+2025-12-27 20:47:22.666 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui-standalone-preset.js - null null
+2025-12-27 20:47:22.669 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui-standalone-preset.js - 200 77352 text/javascript 2.65ms
+2025-12-27 20:47:22.672 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/swagger-ui-bundle.js - 200 424767 text/javascript 5.5277ms
+2025-12-27 20:47:23.010 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-27 20:47:23.120 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/favicon-32x32.png - null null
+2025-12-27 20:47:23.124 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/favicon-32x32.png - 200 628 image/png 4.0296ms
+2025-12-27 20:47:23.234 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 223.7996ms
+2025-12-27 20:47:55.207 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/TaskControllers - application/json 66
+2025-12-27 20:47:55.223 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-27 20:47:55.231 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-27 20:47:55.258 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/TaskControllers - 500 null text/plain; charset=utf-8 50.7468ms
+2025-12-27 21:17:54.057 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-27 21:17:54.099 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-27 21:17:54.100 +05:30 [INF] Hosting environment: Development
+2025-12-27 21:17:54.100 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-27 21:17:54.238 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-27 21:17:54.290 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-27 21:17:54.303 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 65.6669ms
+2025-12-27 21:17:54.318 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-27 21:17:58.243 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 21:17:58.254 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 12.5411ms
+2025-12-27 21:17:58.279 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 21:17:58.280 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 0.9717ms
+2025-12-27 21:17:58.805 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-27 21:17:59.002 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 196.7864ms
+2025-12-27 21:18:29.087 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/register - application/json 66
+2025-12-27 21:18:29.108 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Register (TaskHub.api)'
+2025-12-27 21:18:29.142 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(TaskHub.api.Dtos.UserRegisterDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-27 21:18:35.311 +05:30 [ERR] Failed executing DbCommand (195ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[UserName] = @__request_UserName_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-27 21:18:35.346 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'TaskHub.api.Data.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Users'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:e40643e5-f7a6-40d1-a5a4-e5af4bc3b04a
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Users'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:e40643e5-f7a6-40d1-a5a4-e5af4bc3b04a
+Error Number:208,State:1,Class:16
+2025-12-27 21:20:22.099 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-27 21:20:22.141 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-27 21:20:22.141 +05:30 [INF] Hosting environment: Development
+2025-12-27 21:20:22.141 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-27 21:20:22.287 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-27 21:20:22.353 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-27 21:20:22.369 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 82.131ms
+2025-12-27 21:20:22.387 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-27 21:20:25.616 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 21:20:25.633 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 20.0495ms
+2025-12-27 21:20:26.055 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-27 21:20:26.277 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 221.9311ms
+2025-12-27 21:20:29.077 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 21:20:29.078 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 0.7602ms
+2025-12-27 21:20:38.892 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/register - application/json 67
+2025-12-27 21:20:38.902 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Register (TaskHub.api)'
+2025-12-27 21:20:38.949 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(TaskHub.api.Dtos.UserRegisterDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-27 21:20:41.008 +05:30 [ERR] Failed executing DbCommand (50ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[UserName] = @__request_UserName_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-27 21:20:41.034 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'TaskHub.api.Data.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Users'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:aaf20ec0-f1e7-4bb1-80bc-397985778618
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Users'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:aaf20ec0-f1e7-4bb1-80bc-397985778618
+Error Number:208,State:1,Class:16
+2025-12-27 21:22:14.169 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-27 21:22:14.217 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-27 21:22:14.217 +05:30 [INF] Hosting environment: Development
+2025-12-27 21:22:14.217 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-27 21:22:14.372 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-27 21:22:14.431 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-27 21:22:14.443 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 75.3885ms
+2025-12-27 21:22:14.460 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-27 21:22:17.566 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/register - application/json 67
+2025-12-27 21:22:17.641 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Register (TaskHub.api)'
+2025-12-27 21:22:17.715 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(TaskHub.api.Dtos.UserRegisterDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-27 21:22:20.052 +05:30 [ERR] Failed executing DbCommand (57ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[UserName] = @__request_UserName_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-27 21:22:20.085 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'TaskHub.api.Data.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Users'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:043e3aea-a52b-4503-ad65-1a3d82534a63
+Error Number:208,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Users'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:043e3aea-a52b-4503-ad65-1a3d82534a63
+Error Number:208,State:1,Class:16
+2025-12-27 22:35:19.010 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-27 22:35:19.055 +05:30 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-12-27 22:35:19.101 +05:30 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-12-27 22:35:19.167 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-12-27 22:35:19.176 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-12-27 22:35:19.182 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-12-27 22:35:19.192 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-12-27 22:35:19.201 +05:30 [INF] Applying migration '20251227170455_PendingModelChanges'.
+2025-12-27 22:35:19.220 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Users] (
+    [Id] int NOT NULL IDENTITY,
+    [UserName] nvarchar(50) NOT NULL,
+    [PasswordHash] varbinary(max) NOT NULL,
+    [PasswordSalt] varbinary(max) NOT NULL,
+    [Role] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Users] PRIMARY KEY ([Id])
+);
+2025-12-27 22:35:19.226 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20251227170455_PendingModelChanges', N'9.0.9');
+2025-12-27 22:35:19.237 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-12-27 22:36:15.652 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-27 22:36:15.693 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-27 22:36:15.693 +05:30 [INF] Hosting environment: Development
+2025-12-27 22:36:15.693 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-27 22:36:15.849 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-27 22:36:15.903 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-27 22:36:15.914 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 66.1536ms
+2025-12-27 22:36:15.932 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-27 22:36:21.070 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/register - application/json 67
+2025-12-27 22:36:21.092 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Register (TaskHub.api)'
+2025-12-27 22:36:21.115 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(TaskHub.api.Dtos.UserRegisterDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-27 22:36:22.502 +05:30 [INF] Executed DbCommand (112ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[UserName] = @__request_UserName_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-27 22:36:22.703 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (Size = 8000) (DbType = Binary), @p1='?' (Size = 8000) (DbType = Binary), @p2='?' (Size = 4000), @p3='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([PasswordHash], [PasswordSalt], [Role], [UserName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-12-27 22:36:22.735 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-12-27 22:36:22.740 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Register (TaskHub.api) in 1622.0455ms
+2025-12-27 22:36:22.740 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Register (TaskHub.api)'
+2025-12-27 22:36:22.747 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/register - 200 null text/plain; charset=utf-8 1677.0505ms
+2025-12-27 22:37:02.808 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 22:37:02.814 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 6.2109ms
+2025-12-27 22:37:03.054 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-27 22:37:03.181 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 127.0048ms
+2025-12-27 22:37:23.293 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-27 22:37:23.295 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-27 22:37:23.299 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-27 22:37:23.418 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-27 22:43:42.995 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-27 22:43:43.029 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-27 22:43:43.029 +05:30 [INF] Hosting environment: Development
+2025-12-27 22:43:43.029 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-27 22:43:43.171 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-27 22:43:43.237 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-27 22:43:43.252 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 81.3779ms
+2025-12-27 22:43:43.269 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-27 22:43:47.918 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-27 22:43:47.943 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-27 22:43:47.963 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-27 22:43:49.100 +05:30 [INF] Executed DbCommand (37ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-27 22:43:49.218 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-27 22:43:49.231 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 1263.8034ms
+2025-12-27 22:43:49.232 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-27 22:43:49.238 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 1320.4754ms
+2025-12-27 22:45:43.751 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/TaskControllers - null null
+2025-12-27 22:45:43.759 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-27 22:45:43.763 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-27 22:45:43.772 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/TaskControllers - 500 null text/plain; charset=utf-8 55.7083ms
+2025-12-27 22:46:16.930 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 22:46:16.942 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 12.3182ms
+2025-12-27 22:46:17.214 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-27 22:46:17.323 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.9967ms
+2025-12-27 22:46:34.018 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-27 22:46:34.019 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-27 22:46:34.020 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-27 22:46:34.158 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-27 22:46:34.161 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-27 22:46:34.162 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 141.4864ms
+2025-12-27 22:46:34.162 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-27 22:46:34.162 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 144.3998ms
+2025-12-27 22:50:53.218 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 22:50:53.219 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 0.7548ms
+2025-12-27 22:50:53.470 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-27 22:50:53.474 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.0724ms
+2025-12-27 22:55:44.136 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 22:55:44.137 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 1.0719ms
+2025-12-27 22:55:44.363 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-27 22:55:44.368 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.7438ms
+2025-12-27 22:55:57.773 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-27 22:55:57.774 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-27 22:55:57.774 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-27 22:55:58.711 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-27 22:55:58.712 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-27 22:55:58.712 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 937.3205ms
+2025-12-27 22:55:58.712 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-27 22:55:58.712 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 939.3978ms
+2025-12-27 23:01:57.460 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-27 23:01:57.500 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-27 23:01:57.500 +05:30 [INF] Hosting environment: Development
+2025-12-27 23:01:57.500 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-27 23:01:57.656 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-27 23:01:57.709 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-27 23:01:57.724 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 69.1664ms
+2025-12-27 23:01:57.742 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-27 23:02:02.743 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 23:02:02.749 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 6.1609ms
+2025-12-27 23:02:02.976 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-27 23:02:03.094 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 118.0955ms
+2025-12-27 23:02:20.847 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-27 23:02:20.859 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-27 23:02:20.883 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-27 23:02:22.263 +05:30 [INF] Executed DbCommand (49ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-27 23:02:22.414 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-27 23:02:22.431 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 1543.7102ms
+2025-12-27 23:02:22.431 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-27 23:02:22.442 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 1594.8384ms
+2025-12-27 23:25:59.550 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-27 23:25:59.586 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-27 23:25:59.586 +05:30 [INF] Hosting environment: Development
+2025-12-27 23:25:59.587 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-27 23:25:59.785 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-27 23:25:59.848 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-27 23:25:59.864 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 81.4908ms
+2025-12-27 23:25:59.883 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-27 23:26:03.940 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-27 23:26:03.944 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 4.1743ms
+2025-12-27 23:26:04.097 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-27 23:26:04.184 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 86.8979ms
+2025-12-27 23:26:40.465 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-27 23:26:40.513 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-27 23:26:40.517 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-27 23:26:40.536 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 500 null text/plain; charset=utf-8 99.7566ms
+2025-12-27 23:27:15.427 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-27 23:27:15.430 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-27 23:27:15.451 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-27 23:27:18.305 +05:30 [INF] Executed DbCommand (91ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-27 23:27:19.242 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-27 23:27:19.255 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 3800.4807ms
+2025-12-27 23:27:19.255 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-27 23:27:19.264 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 3837.7483ms
+2025-12-27 23:27:48.318 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-27 23:27:48.358 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-27 23:27:48.360 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-27 23:27:48.361 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 500 null text/plain; charset=utf-8 43.1508ms
+2025-12-27 23:36:41.884 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-27 23:36:41.885 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-27 23:36:41.888 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-27 23:36:41.889 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 500 null text/plain; charset=utf-8 4.7889ms
+2025-12-27 23:46:27.896 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-27 23:46:27.897 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-27 23:46:27.898 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-27 23:46:27.899 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 500 null text/plain; charset=utf-8 5.6906ms

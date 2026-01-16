@@ -1,0 +1,65 @@
+2026-01-03 15:28:38.830 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-03 15:28:39.213 +05:30 [INF] Now listening on: http://localhost:5216
+2026-01-03 15:28:39.216 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-03 15:28:39.216 +05:30 [INF] Hosting environment: Development
+2026-01-03 15:28:39.216 +05:30 [INF] Content root path: D:\.netCore\TaskHub\TaskHub.api
+2026-01-03 15:28:39.606 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2026-01-03 15:28:39.719 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-01-03 15:28:41.844 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 2243.5535ms
+2026-01-03 15:28:41.867 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2026-01-03 15:28:44.555 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-03 15:28:44.562 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 7.7313ms
+2026-01-03 15:28:44.789 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2026-01-03 15:28:44.980 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 190.8952ms
+2026-01-03 15:29:02.371 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2026-01-03 15:29:02.474 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.Api)'
+2026-01-03 15:29:02.527 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.Api).
+2026-01-03 15:29:08.467 +05:30 [INF] Executed DbCommand (288ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2026-01-03 15:29:08.649 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-03 15:29:08.665 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.Api) in 6131.5942ms
+2026-01-03 15:29:08.665 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.Api)'
+2026-01-03 15:29:08.677 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 6306.4517ms
+2026-01-03 15:29:38.619 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2026-01-03 15:29:38.651 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 32.5168ms
+2026-01-03 15:29:38.652 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2026-01-03 15:30:14.383 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-03 15:30:14.384 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 0.9053ms
+2026-01-03 15:30:14.515 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2026-01-03 15:30:14.521 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.5812ms
+2026-01-03 15:30:29.436 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2026-01-03 15:30:29.437 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.Api)'
+2026-01-03 15:30:29.438 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.Api).
+2026-01-03 15:30:29.522 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2026-01-03 15:30:29.524 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-01-03 15:30:29.524 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.Api) in 86.1131ms
+2026-01-03 15:30:29.525 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.Api)'
+2026-01-03 15:30:29.525 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 89.4101ms
+2026-01-03 15:30:58.495 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2026-01-03 15:30:58.593 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.Api)'
+2026-01-03 15:30:58.597 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskHub.api.Controllers.TaskController (TaskHub.Api).
+2026-01-03 15:30:58.758 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+2026-01-03 15:30:58.798 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskHub.api.Dtos.TaskReadDto, TaskHub.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-01-03 15:30:58.806 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.GetAll (TaskHub.Api) in 208.3832ms
+2026-01-03 15:30:58.806 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.Api)'
+2026-01-03 15:30:58.808 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 200 null application/json; charset=utf-8 315.552ms
+2026-01-03 15:49:09.098 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-01-03 15:49:09.265 +05:30 [INF] Now listening on: http://localhost:5216
+2026-01-03 15:49:09.267 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-01-03 15:49:09.267 +05:30 [INF] Hosting environment: Development
+2026-01-03 15:49:09.267 +05:30 [INF] Content root path: D:\.netCore\TaskHub\TaskHub.api
+2026-01-03 15:49:09.471 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2026-01-03 15:49:09.529 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-01-03 15:49:09.611 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 142.0312ms
+2026-01-03 15:49:09.627 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2026-01-03 15:49:13.921 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2026-01-03 15:49:13.926 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 5.6328ms
+2026-01-03 15:49:14.166 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2026-01-03 15:49:14.282 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 117.0919ms

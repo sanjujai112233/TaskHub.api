@@ -1,0 +1,220 @@
+2025-12-29 20:59:36.580 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-29 20:59:36.892 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-29 20:59:36.894 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-29 20:59:36.895 +05:30 [INF] Hosting environment: Development
+2025-12-29 20:59:36.895 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-29 20:59:37.188 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-29 20:59:37.247 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-29 20:59:38.652 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 1466.0406ms
+2025-12-29 20:59:38.668 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-29 20:59:41.419 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-29 20:59:41.425 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 6.2463ms
+2025-12-29 20:59:41.537 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-29 20:59:41.644 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 106.5897ms
+2025-12-29 20:59:58.013 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-29 20:59:58.062 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-29 20:59:58.103 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-29 21:00:00.337 +05:30 [INF] Executed DbCommand (102ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-29 21:00:00.474 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-29 21:00:00.486 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 2380.2902ms
+2025-12-29 21:00:00.486 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-29 21:00:00.495 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 2481.2045ms
+2025-12-29 21:04:37.993 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Task - application/json 190
+2025-12-29 21:04:38.039 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.Create (TaskHub.api)'
+2025-12-29 21:04:38.043 +05:30 [INF] Route matched with {action = "Create", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TaskHub.api.Dtos.TaskCreatedDto) on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-29 21:04:38.328 +05:30 [INF] Executed DbCommand (41ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([AssignedTo], [CreatedAt], [Description], [DueDate], [Priority], [Status], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-12-29 21:04:38.368 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskHub.api.Dtos.TaskReadDto'.
+2025-12-29 21:04:38.373 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.Create (TaskHub.api) in 330.0746ms
+2025-12-29 21:04:38.374 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.Create (TaskHub.api)'
+2025-12-29 21:04:38.376 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Task - 200 null application/json; charset=utf-8 383.3397ms
+2025-12-29 21:04:59.720 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-29 21:04:59.723 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-29 21:04:59.790 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-29 21:04:59.851 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+2025-12-29 21:04:59.872 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskHub.api.Dtos.TaskReadDto, TaskHub.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-29 21:04:59.877 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api) in 86.4136ms
+2025-12-29 21:04:59.877 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-29 21:04:59.877 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 200 null application/json; charset=utf-8 157.288ms
+2025-12-29 21:07:27.423 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-29 21:07:27.648 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-29 21:07:27.649 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-29 21:07:27.650 +05:30 [INF] Hosting environment: Development
+2025-12-29 21:07:27.650 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-29 21:07:27.842 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-29 21:07:27.904 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-29 21:07:27.991 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 149.8657ms
+2025-12-29 21:07:28.010 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-29 21:07:31.729 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-29 21:07:31.735 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 8.5302ms
+2025-12-29 21:07:31.854 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-29 21:07:31.953 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 98.6535ms
+2025-12-29 21:07:43.267 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-29 21:07:43.368 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-29 21:07:43.405 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-29 21:07:44.442 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-29 21:07:44.524 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-29 21:07:44.536 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 1127.474ms
+2025-12-29 21:07:44.536 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-29 21:07:44.543 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 1276.0878ms
+2025-12-29 21:08:04.538 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-29 21:08:04.590 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-29 21:08:04.593 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-29 21:08:04.821 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+2025-12-29 21:08:04.857 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskHub.api.Dtos.TaskReadDto, TaskHub.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-29 21:08:04.865 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api) in 271.3338ms
+2025-12-29 21:08:04.865 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-29 21:08:04.867 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 200 null application/json; charset=utf-8 329.7133ms
+2025-12-29 21:09:50.053 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5216/api/Task/1/complete?status=Complete - null 0
+2025-12-29 21:09:50.056 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.UpdateStatus (TaskHub.api)'
+2025-12-29 21:09:50.060 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(Int32, System.String) on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-29 21:09:50.151 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-12-29 21:09:50.228 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tasks] SET [AssignedTo] = @p0, [CreatedAt] = @p1, [Description] = @p2, [DueDate] = @p3, [Priority] = @p4, [Status] = @p5, [Title] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-12-29 21:09:50.239 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-12-29 21:09:50.239 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.UpdateStatus (TaskHub.api) in 178.7938ms
+2025-12-29 21:09:50.239 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.UpdateStatus (TaskHub.api)'
+2025-12-29 21:09:50.239 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5216/api/Task/1/complete?status=Complete - 204 null null 186.3343ms
+2025-12-29 21:10:14.060 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-29 21:10:14.069 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-29 21:10:14.070 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-29 21:10:14.075 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+2025-12-29 21:10:14.076 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskHub.api.Dtos.TaskReadDto, TaskHub.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-29 21:10:14.077 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api) in 6.945ms
+2025-12-29 21:10:14.077 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-29 21:10:14.077 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 200 null application/json; charset=utf-8 16.9956ms
+2025-12-29 21:10:27.158 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5216/api/Task/1/complete?status=Pending - null 0
+2025-12-29 21:10:27.159 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.UpdateStatus (TaskHub.api)'
+2025-12-29 21:10:27.160 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(Int32, System.String) on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-29 21:10:27.166 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-12-29 21:10:27.169 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tasks] SET [AssignedTo] = @p0, [CreatedAt] = @p1, [Description] = @p2, [DueDate] = @p3, [Priority] = @p4, [Status] = @p5, [Title] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-12-29 21:10:27.170 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-12-29 21:10:27.170 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.UpdateStatus (TaskHub.api) in 10.4069ms
+2025-12-29 21:10:27.170 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.UpdateStatus (TaskHub.api)'
+2025-12-29 21:10:27.170 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5216/api/Task/1/complete?status=Pending - 204 null null 12.2755ms
+2025-12-29 21:10:42.338 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-29 21:10:42.339 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-29 21:10:42.340 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-29 21:10:42.344 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+2025-12-29 21:10:42.345 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskHub.api.Dtos.TaskReadDto, TaskHub.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-29 21:10:42.346 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api) in 5.8738ms
+2025-12-29 21:10:42.346 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-29 21:10:42.346 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 200 null application/json; charset=utf-8 7.8737ms
+2025-12-29 21:11:59.271 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-29 21:11:59.272 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 0.8139ms
+2025-12-29 21:11:59.416 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-29 21:11:59.422 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.2801ms
+2025-12-29 21:12:05.073 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-29 21:12:05.073 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 0.3932ms
+2025-12-29 21:12:05.161 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-29 21:12:05.164 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.4561ms
+2025-12-29 21:12:21.183 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-29 21:12:21.184 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-29 21:12:21.184 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-29 21:12:21.190 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-29 21:12:21.192 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-29 21:12:21.192 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 7.6915ms
+2025-12-29 21:12:21.192 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-29 21:12:21.192 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 9.5275ms
+2025-12-29 21:12:38.740 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-29 21:12:38.742 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-12-29 21:12:38.749 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-29 21:12:38.749 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 401 0 null 9.3241ms
+2025-12-29 21:12:59.603 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-29 21:12:59.603 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-29 21:12:59.603 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-29 21:12:59.606 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+2025-12-29 21:12:59.607 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskHub.api.Dtos.TaskReadDto, TaskHub.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-29 21:12:59.607 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api) in 3.6756ms
+2025-12-29 21:12:59.607 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-29 21:12:59.607 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 200 null application/json; charset=utf-8 4.8891ms
+2025-12-29 21:13:19.275 +05:30 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-29 21:13:19.428 +05:30 [INF] Now listening on: http://localhost:5216
+2025-12-29 21:13:19.430 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-29 21:13:19.430 +05:30 [INF] Hosting environment: Development
+2025-12-29 21:13:19.430 +05:30 [INF] Content root path: D:\.netCore\TaskHub.api
+2025-12-29 21:13:19.572 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/ - null null
+2025-12-29 21:13:19.619 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-12-29 21:13:19.694 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/ - 404 null null 122.638ms
+2025-12-29 21:13:19.709 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5216/, Response status code: 404
+2025-12-29 21:13:23.703 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-29 21:13:23.705 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/_framework/aspnetcore-browser-refresh.js - 200 16459 application/javascript; charset=utf-8 2.8479ms
+2025-12-29 21:13:23.828 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - null null
+2025-12-29 21:13:23.934 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 105.5328ms
+2025-12-29 21:13:51.340 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5216/api/Auth/login - application/json 47
+2025-12-29 21:13:51.352 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-29 21:13:51.381 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskHub.api.Dtos.LoginDto) on controller TaskHub.api.Controllers.AuthController (TaskHub.api).
+2025-12-29 21:13:52.410 +05:30 [INF] Executed DbCommand (29ms) [Parameters=[@__request_UserName_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[PasswordSalt], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2025-12-29 21:13:52.514 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-29 21:13:52.526 +05:30 [INF] Executed action TaskHub.api.Controllers.AuthController.Login (TaskHub.api) in 1142.5218ms
+2025-12-29 21:13:52.527 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.AuthController.Login (TaskHub.api)'
+2025-12-29 21:13:52.534 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5216/api/Auth/login - 200 null application/json; charset=utf-8 1194.028ms
+2025-12-29 21:14:16.208 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5216/api/Task - null null
+2025-12-29 21:14:16.253 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-29 21:14:16.257 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-29 21:14:16.485 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+2025-12-29 21:14:16.527 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskHub.api.Dtos.TaskReadDto, TaskHub.api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-12-29 21:14:16.534 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api) in 277.3735ms
+2025-12-29 21:14:16.535 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.GetAll (TaskHub.api)'
+2025-12-29 21:14:16.538 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5216/api/Task - 200 null application/json; charset=utf-8 332.8759ms
+2025-12-29 21:18:56.467 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5216/api/Task/1/complete?status=Complete - null 0
+2025-12-29 21:18:56.471 +05:30 [INF] Executing endpoint 'TaskHub.api.Controllers.TaskController.UpdateStatus (TaskHub.api)'
+2025-12-29 21:18:56.474 +05:30 [INF] Route matched with {action = "UpdateStatus", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateStatus(Int32, System.String) on controller TaskHub.api.Controllers.TaskController (TaskHub.api).
+2025-12-29 21:18:56.569 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedTo], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[Priority], [t].[Status], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-12-29 21:18:56.645 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@p7='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tasks] SET [AssignedTo] = @p0, [CreatedAt] = @p1, [Description] = @p2, [DueDate] = @p3, [Priority] = @p4, [Status] = @p5, [Title] = @p6
+OUTPUT 1
+WHERE [Id] = @p7;
+2025-12-29 21:18:56.656 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-12-29 21:18:56.656 +05:30 [INF] Executed action TaskHub.api.Controllers.TaskController.UpdateStatus (TaskHub.api) in 181.5037ms
+2025-12-29 21:18:56.656 +05:30 [INF] Executed endpoint 'TaskHub.api.Controllers.TaskController.UpdateStatus (TaskHub.api)'
+2025-12-29 21:18:56.656 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5216/api/Task/1/complete?status=Complete - 204 null null 189.1392ms
