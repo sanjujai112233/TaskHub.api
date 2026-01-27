@@ -108,11 +108,11 @@ var app = builder.Build();
 // ---------------- Middleware ----------------
 app.UseMiddleware<ExceptionMiddleware>(); //--ExceptionMiddlewre REgistred early in pipeline
 
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 
 app.UseHttpsRedirection();
 
